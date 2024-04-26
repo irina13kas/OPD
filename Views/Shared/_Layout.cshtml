@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApp_1</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="" class="registration-btn">Запись на консультацию</a>
+            </div>
+            <a href="/">Главная страница</a>
+            <a href="#">Обо мне</a>
+            <a href="#">Семинары</a>
+            <a href="#">Консультации</a>
+            <a href="#">Кейсы</a>
+            <a href="#">Отзывы</a>
+            <a href="/contacts">Контакты</a>
+            <div>
+                <a href="#" class="phone-btn">!!Телефон</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+</body>
+
+</html>
