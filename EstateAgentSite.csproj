@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\css\Style_contacts.css" />
+    <None Include="wwwroot\css\Styles.css" />
     <None Include="wwwroot\images\inst_icon.png" />
     <None Include="wwwroot\images\teleg-icon.png" />
     <None Include="wwwroot\images\vk-icon.png" />
