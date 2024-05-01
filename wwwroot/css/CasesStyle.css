@@ -15,7 +15,7 @@ a {
     font-size: 58px;
 }
 
-.image{
+.image {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -23,7 +23,7 @@ a {
     max-width: 1200px;
 }
 
-    .image img{
+    .image img {
         width: calc(25% - 10px); /* 10px - это половина отступов 20px */
         height: auto;
         margin-bottom: 20px;
