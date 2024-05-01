@@ -79,7 +79,7 @@ a {
     font-size: 58px;
 }
 
-.image {
+/*.image {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -107,11 +107,57 @@ a {
         height: auto;
         margin-bottom: 20px;
         box-sizing: border-box;
-    }
+    }*/
 
 #showMoreBtn {
     display: block;
     margin: auto;
+}
+
+.additional-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+    gap: 20px; /* ѕромежуток между изображени€ми */
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+
+.additional-images img {
+    width: 100%;
+    height: auto;
+}
+
+.image {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+    gap: 20px; /* ѕромежуток между изображени€ми */
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.item {
+    position: relative; /* ѕозиционирование относительно .item */
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.text-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    display: none;
+}
+
+/* ѕоказываем текстовый блок при наведении на .item */
+.item:hover .text-block {
+    display: block;
 }
 
 
