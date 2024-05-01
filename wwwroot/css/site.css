@@ -1,22 +1,45 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 60px;
+    /*    background: radial-gradient(circle, #233937, black);*/
+    background: linear-gradient(to right, black, #233937, black);
+    font-family: 'Montserrat', sans-serif; 
+}
+
+header {
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #9C27B000;
+    border-bottom: 2px solid #fff;
+}
+
+header .logo{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+header nav a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+header nav a:hover {text-decoration: underline}
+
+main{
+    width: 80%;
+    padding: 15px 10%;
+    margin: 50px 0;
+}
+
+footer {
+    margin-top: 150px;
+    text-align: center;
+    width: 100%;
+    padding: 25px 0;
+    color: #fff;
+    background: #233937;
+    border-top: 2px solid #000;
 }
