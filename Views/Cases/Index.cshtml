@@ -1,13 +1,65 @@
-﻿@{
-    ViewData["Title"] = "Cases";
-}
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="~/css/Styles.css" rel="stylesheet" />
+    <title>Cases</title>
+    <style>
+        * {
+            margin: 5px;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .heading-title {
+            text-align: center;
+            font-size: 58px;
+        }
+
+        .image {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+            .image img {
+                width: calc(25% - 10px);
+                height: auto;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+            }
+
+        .additional-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+            .additional-images img {
+                width: calc(25% - 10px);
+                height: auto;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+            }
+
+        #showMoreBtn {
+            display: block;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
+
     <div>
         <nav>
             <div class="heading-title">Кейсы</div>
@@ -32,10 +84,13 @@
             </div>
         </nav>
     </div>
+
     <script>
         function showMore() {
-            var additionalImages = document.querySelector('.additional-images');
-            additionalImages.style.display = 'flex';
+            var additionalImages = document.querySelectorAll('.additional-images');
+            additionalImages.forEach(function (image) {
+                image.style.display = 'inline-block';
+            });
             document.getElementById('showMoreBtn').style.display = 'none';
         }
     </script>
