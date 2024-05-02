@@ -87,7 +87,7 @@ a {
 
 .additional-images {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* јвтоматическое распределение по колонкам с минимальной шириной 200px */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* јвтоматическое распределение по колонкам с минимальной шириной 200px */
     gap: 20px; /* ѕромежуток между изображени€ми */
     margin: 20px auto;
     max-width: 1200px;
@@ -103,7 +103,7 @@ a {
 
 .image {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* јвтоматическое распределение по колонкам с минимальной шириной 200px */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* јвтоматическое распределение по колонкам с минимальной шириной 200px */
     gap: 20px; /* ѕромежуток между изображени€ми */
     margin: 20px auto;
     max-width: 1200px;
@@ -130,4 +130,39 @@ a {
     display: block;
 }
 
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    width: 24.4%; /* Ўирина элемента */
+    margin: 0 0.3%; /* ќтступ между элементами */
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+}
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+.car-text-block {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-item:hover .car-text-block {
+    opacity: 1;
+}
 
