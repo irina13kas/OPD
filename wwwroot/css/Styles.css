@@ -63,7 +63,7 @@ main {
     padding: 20px;
 }
 
-iframe {
+.contacts-iframe {
     width: 55vw;
     height: 70vh;
     margin-right: 60px;
@@ -77,6 +77,11 @@ a {
 .heading-title {
     text-align: center;
     font-size: 58px;
+}
+
+.contacts-heading-text{
+    text-align:center;
+    font-size:20px;
 }
 
 
@@ -164,5 +169,25 @@ a {
 
 .carousel-item:hover .car-text-block {
     opacity: 1;
+}
+
+.feedback-table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+.feedback-td{
+    padding:80px;
+    text-align: left;
+    border-bottom:1px solid #ddd;
+}
+
+.feedback-tr:hover{
+    background-color: #1f2c2b;
+}
+
+.feedback-iframe{
+    width: 400px;
+    height: 225px;
 }
 
