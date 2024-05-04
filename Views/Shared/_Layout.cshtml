@@ -1,4 +1,4 @@
-﻿
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,19 +9,23 @@
 </head>
 <body>
     <header>
-        <span class="registration-btn">Запись на консультацию</span>
+        <div class="left-nav">
+            <a href="#" class="consultation-btn">Запись на консультацию</a>
+        </div>
         <nav>
             <div>
                 <a href="/">Главная страница</a>
                 <a href="/about">Обо мне</a>
-                <a href="/agency">Агенство</a>
+                <a href="/agency">Агентство</a>
                 <a href="/seminars">Семинары</a>
                 <a href="/cases">Кейсы</a>
                 <a href="/feedback">Отзывы</a>
                 <a href="/contacts">Контакты</a>
-                <a href="#" class="phone-btn">Телефон</a>
             </div>
         </nav>
+        <div class="right-nav">
+            <a href="tel:+1234567890" class="phone-btn">Позвонить</a>
+        </div>
     </header>
     <main>
         @RenderBody()
