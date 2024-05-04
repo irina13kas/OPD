@@ -9,20 +9,15 @@ body {
 }
 
 header {
-    width: 100%;
+    width: 98%;
     padding: 15px;
     color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: #9C27B000;
     border-bottom: 2px solid #fff;
 }
-
-    header .registration-btn {
-        font-weight: 600;
-        font-size: 25px;
-    }
 
     header nav a {
         color: #fff;
@@ -42,6 +37,19 @@ main {
     color: #fff;
     margin: 50px 0;
 }
+
+.consultation-btn,
+.phone-btn {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #000000;
+}
+
+    .consultation-btn:hover,
+    .phone-btn:hover {
+        background-color: #fff;
+    }
 
 .contacts-text {
     width: 45%;
@@ -92,8 +100,8 @@ a {
 
 .additional-images {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Автоматическое распределение по колонкам с минимальной шириной 200px */
-    gap: 20px; /* Промежуток между изображениями */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* РђРІС‚РѕРјР°С‚РёС‡РµСЃРєРѕРµ СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµ РїРѕ РєРѕР»РѕРЅРєР°Рј СЃ РјРёРЅРёРјР°Р»СЊРЅРѕР№ С€РёСЂРёРЅРѕР№ 200px */
+    gap: 20px; /* РџСЂРѕРјРµР¶СѓС‚РѕРє РјРµР¶РґСѓ РёР·РѕР±СЂР°Р¶РµРЅРёСЏРјРё */
     margin: 20px auto;
     max-width: 1200px;
 }
@@ -108,14 +116,14 @@ a {
 
 .image {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Автоматическое распределение по колонкам с минимальной шириной 200px */
-    gap: 20px; /* Промежуток между изображениями */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* РђРІС‚РѕРјР°С‚РёС‡РµСЃРєРѕРµ СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµ РїРѕ РєРѕР»РѕРЅРєР°Рј СЃ РјРёРЅРёРјР°Р»СЊРЅРѕР№ С€РёСЂРёРЅРѕР№ 200px */
+    gap: 20px; /* РџСЂРѕРјРµР¶СѓС‚РѕРє РјРµР¶РґСѓ РёР·РѕР±СЂР°Р¶РµРЅРёСЏРјРё */
     margin: 20px auto;
     max-width: 1200px;
 }
 
 .item {
-    position: relative; /* Позиционирование относительно .item */
+    position: relative; /* РџРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅРѕ .item */
 }
 
 
@@ -130,7 +138,7 @@ a {
     display: none;
 }
 
-/* Показываем текстовый блок при наведении на .item */
+/* РџРѕРєР°Р·С‹РІР°РµРј С‚РµРєСЃС‚РѕРІС‹Р№ Р±Р»РѕРє РїСЂРё РЅР°РІРµРґРµРЅРёРё РЅР° .item */
 .item:hover .text-block {
     display: block;
 }
@@ -141,8 +149,8 @@ a {
 }
 
 .carousel-item {
-    width: 24.4%; /* Ширина элемента */
-    margin: 0 0.3%; /* Отступ между элементами */
+    width: 24.4%; /* РЁРёСЂРёРЅР° СЌР»РµРјРµРЅС‚Р° */
+    margin: 0 0.3%; /* РћС‚СЃС‚СѓРї РјРµР¶РґСѓ СЌР»РµРјРµРЅС‚Р°РјРё */
     float: left;
     box-sizing: border-box;
     position: relative;
