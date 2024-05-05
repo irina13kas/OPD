@@ -209,3 +209,544 @@ a {
     height: 225px;
 }
 
+.container-2 {
+    max-width: 700px;
+}
+
+/* Контейнер каждой секции */
+.container-2 {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 92%;
+    max-width: 1140px;
+    height: 40%;
+    display: flex;
+}
+
+.w-layout-blockcontainer {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Секция для каждого блока */
+.section-main {
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Блок "Обо мне" */
+.grid-about {
+    flex-flow: column;
+    display: flex;
+}
+
+.grid-about {
+    grid-column-gap: 11px;
+    grid-row-gap: 11px;
+    grid-template-rows: auto;
+    max-width: 1200px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w-layout-grid {
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.div-block-about {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 5px solid #cdbd97;
+    border-radius: 5px;
+    flex-flow: column;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.heading-about {
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: -6px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 40px;
+    position: static;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 46px;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.list-about {
+    order: 0;
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.w-list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+/* Настройки списка*/
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+.list-item {
+    text-align: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.paragraph-about {
+    margin-top: 10px;
+    text-align: center;
+    width: 95%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.image-about {
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.w-container:before, .w-container:after {
+    content: " ";
+    grid-area: 1 / 1 / 2 / 2;
+    display: table;
+}
+
+.w-container:after {
+    clear: both;
+}
+
+img {
+    display: block;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    display: inline-block;
+}
+
+img {
+    border: 0;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+/*Настройки списка*/
+li {
+    margin-bottom: 10px;
+}
+
+li {
+    display: list-item;
+    unicode-bidi: isolate;
+}
+
+/*Настройки заголовка между блоками*/
+.big-heading {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    position: static;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+
+/*Блок "Выгоды сотрудничества со мной"*/
+.div-plus {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 5fr;
+    grid-auto-columns: 1fr;
+    width: 75%;
+    display: grid;
+}
+
+.div-image {
+    border: 3px solid #cdbd97;
+    flex-flow: column;
+    order: 0;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.div-one-plus {
+    border: 3px solid #cdbd97;
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+/*Настройки маленькиного заголовка*/
+.small-heading {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+h5 {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.paragraph-plus {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.paragraph-3 {
+    margin-bottom: -12px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.bold-text {
+    width: 100%;
+    font-weight: 400;
+    display: block;
+    position: static;
+}
+
+/*Блок "Три пути"*/
+.div-block-grid-ways {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    width: 100%;
+    display: grid;
+}
+
+.div-ways {
+    width: 100%;
+}
+
+.div-best-way {
+    width: 100%;
+    align-self: center;
+    justify-self: auto;
+}
+
+.heading-ways {
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 0;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.paragraph-ways {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+
+.div-block-one-ways {
+    width: 100%;
+}
+
+.grid-ways {
+    align-self: center;
+    justify-self: auto;
+    grid-column-gap: 11px;
+    grid-row-gap: 11px;
+    grid-template-rows: auto;
+    max-width: 1200px;
+    margin-top: 10px;
+}
+
+.w-layout-grid {
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+/*Блок "Как мы придем к результату"*/
+.div-block-result {
+    flex-flow: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: 85%;
+    margin-left: -10px;
+    display: flex;
+}
+
+.div-text-list {
+    flex-flow: row;
+    justify-content: center;
+    align-self: auto;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.div-block-arrow {
+    z-index: 2;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.paragraph-result {
+    z-index: 0;
+    align-self: center;
+    width: 100%;
+    margin-bottom: -12px;
+    position: relative;
+    bottom: 0;
+    left: 2%;
+}
+
+.bold-text {
+    width: 100%;
+    margin-left: 0;
+    font-weight: 400;
+    display: block;
+    position: relative;
+    left: 0;
+}
+
+.image-arrow {
+    height: 75px;
+    margin-bottom: -29px;
+}
+
+
+/*Блок "Запись на консультацию"*/
+.section-main-consult {
+    opacity: 1;
+    -webkit-text-fill-color: inherit;
+    mix-blend-mode: normal;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('../images/back-consultation.png');
+    background-position: 50% 0;
+    background-repeat: repeat;
+    background-size: cover;
+    background-clip: border-box;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-block {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.w-form {
+    margin: 0 0 15px;
+}
+
+.heading-consult {
+    width: 100%;
+}
+
+.form {
+    flex-flow: column;
+    display: flex;
+}
+
+.grid-re {
+    grid-template: "."
+        "Area"
+        / 1fr 1fr 1fr;
+    grid-auto-rows: minmax(auto, 1fr);
+}
+
+input.w-button {
+    -webkit-appearance: button;
+}
+
+.submit-button {
+    background-color: #1a1b1f;
+}
+
+.w-button {
+    color: #fff;
+    line-height: inherit;
+    cursor: pointer;
+    border: 0;
+    border-radius: 0;
+    padding: 9px 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.w-form-done {
+    text-align: center;
+    background-color: #1a1b1f;
+    padding: 20px;
+    display: none;
+}
+
+.w-form-fail {
+    background-color: #1a1b1f;
+    margin-top: 10px;
+    padding: 10px;
+    display: none;
+}
+
+.bold-text-cons {
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.label-cons {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.w-input, .w-select {
+    color: #333;
+    vertical-align: middle;
+    background-color: #fff;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 3px;
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
