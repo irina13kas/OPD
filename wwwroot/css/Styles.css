@@ -702,6 +702,10 @@ input.w-button {
     display: inline-block;
 }
 
+.w-button:hover {
+    background-color: black;
+}
+
 .w-form-done {
     text-align: center;
     background-color: #1a1b1f;
