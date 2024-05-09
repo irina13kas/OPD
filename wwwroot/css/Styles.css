@@ -27,7 +27,6 @@ header {
     }
 
         header nav a:hover {
-
             text-decoration: underline
         }
 
@@ -87,9 +86,9 @@ a {
     font-size: 58px;
 }
 
-.contacts-heading-text{
-    text-align:center;
-    font-size:20px;
+.contacts-heading-text {
+    text-align: center;
+    font-size: 20px;
 }
 
 #showMoreBtn {
@@ -189,22 +188,22 @@ a {
     opacity: 1;
 }
 
-.feedback-table{
-    width:100%;
+.feedback-table {
+    width: 100%;
     border-collapse: collapse;
 }
 
-.feedback-td{
-    padding:80px;
+.feedback-td {
+    padding: 80px;
     text-align: left;
-    border-bottom:1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
-.feedback-tr:hover{
+.feedback-tr:hover {
     background-color: #1f2c2b;
 }
 
-.feedback-iframe{
+.feedback-iframe {
     width: 400px;
     height: 225px;
 }
@@ -288,24 +287,6 @@ a {
     position: static;
 }
 
-h3 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 46px;
-}
-
-h3 {
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-}
-
 .list-about {
     order: 0;
     align-self: center;
@@ -320,18 +301,6 @@ h3 {
     list-style: none;
 }
 
-/* Настройки списка*/
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    unicode-bidi: isolate;
-}
-
 .list-item {
     text-align: center;
     width: 95%;
@@ -342,28 +311,21 @@ ul {
 
 .paragraph-about {
     margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
     width: 95%;
     font-size: 20px;
     font-weight: 400;
 }
 
-p {
-    margin-bottom: 10px;
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-
 .image-about {
     object-fit: fill;
     border-radius: 10px;
+    vertical-align: middle;
+    max-width: 100%;
+    display: inline-block;
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 .w-container:before, .w-container:after {
@@ -376,35 +338,6 @@ p {
     clear: both;
 }
 
-img {
-    display: block;
-}
-
-img {
-    vertical-align: middle;
-    max-width: 100%;
-    display: inline-block;
-}
-
-img {
-    border: 0;
-}
-
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
-
-/*Настройки списка*/
-li {
-    margin-bottom: 10px;
-}
-
-li {
-    display: list-item;
-    unicode-bidi: isolate;
-}
-
 /*Настройки заголовка между блоками*/
 .big-heading {
     text-align: center;
@@ -415,27 +348,6 @@ li {
     position: static;
 }
 
-h2 {
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 50px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-}
-
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-}
-
-
 /*Блок "Выгоды сотрудничества со мной"*/
 .div-plus {
     grid-column-gap: 16px;
@@ -443,12 +355,13 @@ h2 {
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr 5fr;
     grid-auto-columns: 1fr;
-    width: 75%;
+    width: 100%;
     display: grid;
 }
 
 .div-image {
     border: 3px solid #cdbd97;
+    border-radius: 3px;
     flex-flow: column;
     order: 0;
     justify-content: center;
@@ -470,6 +383,14 @@ h2 {
     justify-self: center;
 }
 
+.image-plus {
+    vertical-align: middle;
+    max-width: 100%;
+    display: inline-block;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
 /*Настройки маленькиного заголовка*/
 .small-heading {
     text-align: center;
@@ -479,51 +400,10 @@ h2 {
     font-size: 30px;
 }
 
-h5 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 34px;
-}
-
-h5 {
-    display: block;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-}
-
 .paragraph-plus {
     margin-left: 10px;
     margin-right: 10px;
     font-size: 20px;
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-
-.paragraph-3 {
-    margin-bottom: -12px;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.bold-text {
-    width: 100%;
-    font-weight: 400;
-    display: block;
-    position: static;
 }
 
 /*Блок "Три пути"*/
@@ -587,26 +467,41 @@ p {
 }
 
 /*Блок "Как мы придем к результату"*/
+.div-block-main-result {
+    flex-flow: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: flex;
+
+}
+
 .div-block-result {
     flex-flow: column;
     justify-content: center;
     align-self: center;
     align-items: center;
-    width: 85%;
+    width: 100%;
     margin-left: -10px;
     display: flex;
 }
 
 .div-text-list {
     flex-flow: row;
+    flex: 0 auto;
     justify-content: center;
     align-self: auto;
-    align-items: center;
-    width: 80%;
+    align-items: flex-start;
+    width: 100%;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    position: relative
 }
 
 .div-block-arrow {
@@ -619,26 +514,43 @@ p {
 
 .paragraph-result {
     z-index: 0;
+    border-top: 3px solid #cdbd97;
+    border-bottom: 3px solid #cdbd97;
+    border-right: 3px solid #cdbd97;
+    justify-content: center;
     align-self: center;
+    align-items: flex-start;
     width: 100%;
-    margin-bottom: -12px;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: block;
     position: relative;
     bottom: 0;
-    left: 2%;
+    left: 0%;
 }
 
 .bold-text {
-    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    width: 97%;
+    height: 75px;
     margin-left: 0;
+    padding-left:10px;
     font-weight: 400;
-    display: block;
+    display: flex;
     position: relative;
     left: 0;
+    font-size: 20px;
 }
 
 .image-arrow {
-    height: 75px;
-    margin-bottom: -29px;
+    height: 120px;
+    margin-bottom: -40px;
+    vertical-align: middle;
+    max-width: 100%;
+    display: inline-block;
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 
@@ -669,6 +581,11 @@ p {
 
 .heading-consult {
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
 }
 
 .form {
@@ -702,9 +619,9 @@ input.w-button {
     display: inline-block;
 }
 
-.w-button:hover {
-    background-color: black;
-}
+    .w-button:hover {
+        background-color: black;
+    }
 
 .w-form-done {
     text-align: center;
@@ -753,4 +670,3 @@ button, input, optgroup, select, textarea {
     font: inherit;
     margin: 0;
 }
-
