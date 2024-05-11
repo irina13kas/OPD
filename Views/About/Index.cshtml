@@ -176,35 +176,76 @@
         </div>
     </section>
     <section class="section-main-consult">
-        <div class="w-layout-blockcontainer container-2 w-container">
-            <div class="form-block w-form">
-                <h5 class="heading-consult">
-                    <strong class="bold-text-cons">Если вы хотите получить лучший результат и максимальную выгоду от продажи вашей недвижимости, свяжитесь со мной, чтобы обсудить подробности:</strong>
-                </h5>
-                <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form">
-                    <div class="w-layout-grid grid-re">
-                        <div class="div-block-grid-cons">
-                            <label for="name" class="label-cons">Имя</label>
-                            <input class="text-field-cons w-input" maxlength="256" name="Name" data-name="Name" placeholder="Имя" type="text" id="name" required />
-                        </div>
-                        <div class="div-block-grid-cons">
-                            <label for="Phone" class="label-cons">Телефон</label>
-                            <input class="text-field-cons w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="Телефон" type="tel" id="Phone" required />
-                        </div>
-                        <div class="div-block-grid-cons">
-                            <label for="Email" class="label-cons">Почта</label>
-                            <input class="text-field-cons w-input" maxlength="256" name="Email" data-name="Email" placeholder="Почта" type="email" id="Email" required />
-                        </div>
+    <div class="w-layout-blockcontainer container-2 w-container">
+        <div class="form-block w-form">
+            <h5 class="heading-consult">
+                <strong class="bold-text-cons">Если вы хотите получить лучший результат и максимальную выгоду от продажи вашей недвижимости, свяжитесь со мной, чтобы обсудить подробности:</strong>
+            </h5>
+            <script>
+                // Send a request for a consultation to the corporate email
+                async function sendConsultationEmail() {
+                    const name = document.getElementById("name");
+                    const phone = document.getElementById("Phone");
+                    const email = document.getElementById("Email");
+                    const text = "";
+                    const response = await fetch('http://89.111.173.104:5000/api/statement', {    method: 'POST',
+                        headers: {
+                            'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                        body: JSON.stringify({ name: name.value, email: email.value, text, phone:phone.value })  });
+                    const content = await response.json();
+
+                    name.value = "";
+                    email.value = "";
+                    phone.value = "";
+                }
+                // Send a request for a seminar to the corporate email
+                async function sendSeminarEmail() {
+                    const name = document.getElementById("name");
+                    const phone = document.getElementById("Phone");
+                    const email = document.getElementById("Email");
+                    const consulation = false;
+                    const text = "";
+                    const response = await fetch('http://89.111.173.104:5000/api/statement', {
+                        method: 'POST',
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ name: name.value, email: email.value, text, phone: phone.value, consulation })
+                    });
+                    const content = await response.json();
+
+                    name.value = "";
+                    email.value = "";
+                    phone.value = "";
+                }
+            </script>
+            <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form">
+                <div class="w-layout-grid grid-re">
+                    <div class="div-block-grid-cons">
+                        <label for="name" class="label-cons">Имя</label>
+                        <input class="text-field-cons w-input" maxlength="256" name="Name" data-name="Name" placeholder="Имя" type="text" id="name" required />
                     </div>
-                    <input type="submit" data-wait="Ожидание" class="submit-button w-button" value="Отправить" />
-                </form>
-                <div class="success-message w-form-done">
-                    <div class="text-confirm">Ваша заявка принята!</div>
+                    <div class="div-block-grid-cons">
+                        <label for="Phone" class="label-cons">Телефон</label>
+                        <input class="text-field-cons w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="Телефон" type="tel" id="Phone" required />
+                    </div>
+                    <div class="div-block-grid-cons">
+                        <label for="Email" class="label-cons">Почта</label>
+                        <input class="text-field-cons w-input" maxlength="256" name="Email" data-name="Email" placeholder="Почта" type="email" id="Email" required />
+                    </div>
                 </div>
-                <div class="error-message w-form-fail">
-                    <div class="text-error">Что-то пошло не так</div>
-                </div>
+                <input type="button" data-wait="Ожидание" class="submit-button w-button" value="Отправить" onclick="sendConsultationEmail()" />
+            </form>
+            <div class="success-message w-form-done">
+                <div class="text-confirm">Ваша заявка принята!</div>
+            </div>
+            <div class="error-message w-form-fail">
+                <div class="text-error">Что-то пошло не так</div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 </body>
