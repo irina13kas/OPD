@@ -53,7 +53,7 @@ main {
 
 .contacts-text {
     width: 45%;
-    padding: 50px;
+    padding: 0;
     box-sizing: border-box;
     margin-left: 20px;
     color: #fff;
