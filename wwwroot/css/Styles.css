@@ -151,20 +151,22 @@ a {
 }
 
 .carousel {
-    width: 80%;
+    width: 92%;
+    max-width: 1140px; /* Добавлено */
     margin: 0 auto;
+    height: 206px;
 }
 
 .carousel-item {
-    width: 24.4%; /* Ширина элемента */
-    margin: 0 0.3%; /* Отступ между элементами */
+    width: 33%; /* Изменено */
+    margin: 0 0.3%;
     float: left;
     box-sizing: border-box;
     position: relative;
 }
 
     .carousel-item img {
-        width: 100%;
+        max-width: 100%; /* Добавлено */
         height: auto;
         display: block;
     }
@@ -857,10 +859,22 @@ button, input, optgroup, select, textarea {
 
 /*главная страница*/
 /*шапка*/
+
+.home-container {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 92%;
+    max-width: 1140px;
+    height: 40%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
 .heading-title-home-container .heading-title {
     color: white; /* Цвет текста */
     text-align: center; /* Центрирование текста */
-    padding: 150px 20px; /* Внутренние отступы */
+    padding: 150px; /* Внутренние отступы */
     font-size: 48px; /* Размер текста */
     position: relative; /* Установка позиции относительно родительского контейнера */
 }
@@ -914,7 +928,7 @@ button, input, optgroup, select, textarea {
 .heading-title-home-container {
     position: relative; /* Установка позиции относительно дочерних элементов */
     text-align: center; /* Центрирование внутреннего контента по горизонтали */
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 
 
@@ -962,3 +976,54 @@ button, input, optgroup, select, textarea {
     text-align: center;
     margin-top: 40px; /* Отступ между текстом и кнопкой */
 }
+
+.home-container .w-layout-grid grid-about {
+    margin-bottom: 40px;
+}
+
+.home-container .consl2 .consl {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/*отзывы на главной*/
+.home-reviews {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.home-feedback {
+    display: flex;
+    justify-content: space-between; /* Добавляем равномерное распределение по горизонтали */
+    overflow-x: auto; /* Добавляем горизонтальный скролл, если элементов слишком много */
+    margin-bottom: 40px;
+}
+
+    .home-feedback .feedback-i {
+        width: 400px;
+        height: 225px;
+        margin-right: 10px;
+    }
+
+/*стрелочка наверх*/
+.scroll-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: #ffffff;
+    color: #000000; /* Черный цвет стрелочки */
+    border: none;
+    border-radius: 50%;
+    width: 50px; /* Увеличим размер кнопки */
+    height: 50px; /* Увеличим размер кнопки */
+    font-size: 24px; /* Увеличим размер стрелочки */
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Добавим тень */
+}
+
+    .scroll-top-btn:hover {
+        background-color: #f1f1f1; /* Изменяем цвет при наведении */
+    }
