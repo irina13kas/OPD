@@ -1,5 +1,155 @@
 @{
-    ViewData["Title"] = "Семинары";
+    ViewData["Title"] = "Seminars";
 }
 
-<h1>Семинары</h1>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="~/css/Styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section class="section-main">
+        <div class="w-layout-blockcontainer container-2 w-container">
+            <h2 class="big-heading">СЕМИНАР ДЛЯ СОБСТВЕННИКОВ НЕДВИЖИМОСТИ</h2>
+            <div class="div-seminar-is">
+                <p class="paragraph-seminar">Семинар для собственников недвижимости – это ежемесячное мероприятие, в рамках которого все желающие могут бесплатно познакомиться с самым передовым и эффективным методом продажи недвижимости.</p>
+            </div>
+            <div class="div-seminar">
+                <div class="div-block-grid-seminar">
+                    <div class="div-ways">
+                        <h3 class="heading-seminar">
+                            Вы узнаете на Семинаре:<br />‍
+                        </h3>
+                        <p class="paragraph-ways">
+                            <strong class="bold-text-2">
+                                Как создать ажиотаж и построить очередь из 50 покупателей?<br />
+                                ‍<br />
+                                Как не продешевить и продать квартиру за 21 день?<br />
+                                ‍<br />Как найти идеального покупателя, который заплатит максимальную цену?
+                            </strong>
+                            <br />
+                            ‍<br />
+                        </p>
+                    </div>
+                    <div class="div-ways">
+                        <h3 class="heading-seminar">На Семинар обязательно нужно прийти тем, кто:</h3>
+                        <ol role="list" class="list-seminar">
+                            <li class="list-item-seminar">
+                                <p class="paragraph-seminar">
+                                    Собирается продать недвижимость прямо сейчас или в будущем<br />
+                                </p>
+                            </li>
+                            <li class="list-item-seminar">
+                                <p class="paragraph-seminar">
+                                    Хочет продавать свою недвижимость самостоятельно без риэлторов<br />
+                                </p>
+                            </li>
+                            <li class="list-item-seminar">
+                                <p class="paragraph-seminar">
+                                    Ищет профессионала, чтобы поручить ему продажу недвижимости<br />
+                                </p>
+                            </li>
+                            <li class="list-item-seminar">
+                                <p class="paragraph-seminar">
+                                    Планирует стать агентом по недвижимости<br />
+                                </p>
+                            </li>
+                            <li class="list-item-seminar">
+                                <p class="paragraph-seminar">
+                                    Просто хочет узнать что-то новое<br />
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="div-seminar-mini">
+                <div class="div-place">
+                    <h3 class="heading-seminar">Место и дата проведения</h3>
+                    <p class="paragraph-seminar">
+                        Семинары проходят в офисе «Макромир» по адресу: <br />
+                        Санкт-Петербург, Литейный пр., д. 26 (БЦ Преображенский двор, офис 205) <br />
+                        ‍<br />Для того, чтобы узнать дату и время ближайшего семинара, необходимо записаться по телефону или оставить заявку на сайте.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-main-consult">
+        <div class="w-layout-blockcontainer container-2 w-container">
+            <div class="form-block w-form">
+                <h5 class="heading-consult">
+                    <strong class="bold-text-cons">Оставьте заявку, чтобы получить приглашение на семинар с указанием точной даты и времени</strong>
+                </h5>
+                <script>
+                    // Send a request for a consultation to the corporate email
+                    async function sendConsultationEmail() {
+                        const name = document.getElementById("name");
+                        const phone = document.getElementById("Phone");
+                        const email = document.getElementById("Email");
+                        const text = "";
+                        const response = await fetch('http://89.111.173.104:5000/api/statement', {
+                            method: 'POST',
+                            headers: {
+                                'Accept': 'application/json',
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ name: name.value, email: email.value, text, phone: phone.value })
+                        });
+                        const content = await response.json();
+
+                        name.value = "";
+                        email.value = "";
+                        phone.value = "";
+                    }
+                    // Send a request for a seminar to the corporate email
+                    async function sendSeminarEmail() {
+                        const name = document.getElementById("name");
+                        const phone = document.getElementById("Phone");
+                        const email = document.getElementById("Email");
+                        const consulation = false;
+                        const text = "";
+                        const response = await fetch('http://89.111.173.104:5000/api/statement', {
+                            method: 'POST',
+                            headers: {
+                                'Accept': 'application/json',
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ name: name.value, email: email.value, text, phone: phone.value, consulation })
+                        });
+                        const content = await response.json();
+
+                        name.value = "";
+                        email.value = "";
+                        phone.value = "";
+                    }
+                </script>
+                <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form">
+                    <div class="w-layout-grid grid-re">
+                        <div class="div-block-grid-cons">
+                            <label for="name" class="label-cons">Имя</label>
+                            <input class="text-field-cons w-input" maxlength="256" name="Name" data-name="Name" placeholder="Имя" type="text" id="name" required />
+                        </div>
+                        <div class="div-block-grid-cons">
+                            <label for="Phone" class="label-cons">Телефон</label>
+                            <input class="text-field-cons w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="Телефон" type="tel" id="Phone" required />
+                        </div>
+                        <div class="div-block-grid-cons">
+                            <label for="Email" class="label-cons">Почта</label>
+                            <input class="text-field-cons w-input" maxlength="256" name="Email" data-name="Email" placeholder="Почта" type="email" id="Email" required />
+                        </div>
+                    </div>
+                    <input type="button" data-wait="Ожидание" class="submit-button w-button" value="Отправить" onclick="sendConsultationEmail()" />
+                </form>
+                <div class="success-message w-form-done">
+                    <div class="text-confirm">Ваша заявка принята!</div>
+                </div>
+                <div class="error-message w-form-fail">
+                    <div class="text-error">Что-то пошло не так</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>

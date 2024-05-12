@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Обо мне";
+    ViewData["Title"] = "About";
 }
 
 <head>
@@ -34,7 +34,7 @@
 
     <section class="section-main">
         <div class="w-layout-blockcontainer container-2 w-container">
-            <h2 class="big-heading">ПРИ ПРОДАЖЕ НЕДВИЖИМОСТИ СО МНОЙ ВЫ ПОЛУЧИТЕ</h2>
+            <h2 class="big-heading">ПРИ ПРОДАЖЕ НЕДВИЖИМОСТИ ВЫ ПОЛУЧИТЕ</h2>
             <div class="div-plus">
                 <div class="div-image">
                     <img src="/images/money-rain.png" loading="lazy" alt="" class="image-plus" />
@@ -188,12 +188,14 @@
                         const phone = document.getElementById("Phone");
                         const email = document.getElementById("Email");
                         const text = "";
-                        const response = await fetch('http://89.111.173.104:5000/api/statement', {    method: 'POST',
+                        const response = await fetch('http://89.111.173.104:5000/api/statement', {
+                            method: 'POST',
                             headers: {
                                 'Accept': 'application/json',
-                            'Content-Type': 'application/json'
-                        },
-                            body: JSON.stringify({ name: name.value, email: email.value, text, phone:phone.value })  });
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ name: name.value, email: email.value, text, phone: phone.value })
+                        });
                         const content = await response.json();
 
                         name.value = "";
