@@ -1,6 +1,6 @@
 body {
     background: linear-gradient(to right, black, #233937, black);
-    font-family: 'Area', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -848,10 +848,11 @@ button, input, optgroup, select, textarea {
     padding: 0;
     font-size: 20px;
     font-weight: 400;
-    display: flex;
 }
 
-
+.link-agency:hover {
+    opacity: 75%;
+}
 .div-seminar {
     border: 5px solid #cdbd97;
     border-radius: 3px;
@@ -1035,11 +1036,29 @@ button, input, optgroup, select, textarea {
     margin-bottom: 40px;
 }
 
-.home-container .consl2 .consl {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+.ul-about {
+    margin-right: 20px;
 }
+
+.consl1 {
+    text-align: center;
+}
+
+.div-consl-center-about {
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.div-consl-center {
+    height: 80px;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 /*отзывы на главной*/
 .home-reviews {
     max-width: 1140px;
