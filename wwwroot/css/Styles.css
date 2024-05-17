@@ -318,7 +318,7 @@ a {
     grid-column-gap: 16px;
     grid-row-gap: 16px;
     background-color: rgba(0, 0, 0, 0);
-    border: 5px solid #cdbd97;
+    border: 3px solid #cdbd97;
     border-radius: 5px;
     flex-flow: column;
     grid-template-rows: auto auto;
@@ -414,7 +414,7 @@ a {
 
 .div-image {
     border: 3px solid #cdbd97;
-    border-radius: 3px;
+    border-radius: 5px;
     flex-flow: column;
     order: 0;
     justify-content: center;
@@ -429,7 +429,7 @@ a {
 
 .div-one-plus {
     border: 3px solid #cdbd97;
-    border-radius: 3px;
+    border-radius: 5px;
     width: 100%;
     height: 180px;
     align-self: center;
@@ -491,7 +491,7 @@ a {
 
 .heading-ways {
     text-align: center;
-    border-bottom: 3px solid #fff;
+    border-bottom: 5px solid #fff;
     width: 100%;
     margin: auto;
     padding-bottom: 0;
@@ -501,7 +501,6 @@ a {
 
 .paragraph-ways {
     margin-top: 10px;
-    margin-bottom: 10px;
     line-height: 24px;
 }
 
@@ -792,7 +791,7 @@ input.w-button {
     color: #333;
     vertical-align: middle;
     background-color: #fff;
-    width: 100%;
+    width: -webkit-fill-available;
     height: 30px;
     margin-bottom: 10px;
     font-size: 14px;
@@ -807,8 +806,8 @@ button, input, optgroup, select, textarea {
 
 /*Блок "Информация про агентство"*/
 .div-agency {
-    border: 5px solid #cdbd97;
-    border-radius: 3px;
+    border: 3px solid #cdbd97;
+    border-radius: 5px;
     flex-flow: column;
     width: 100%;
     display: flex;
@@ -828,8 +827,8 @@ button, input, optgroup, select, textarea {
 }
 
 .div-paragraph-agency {
-    border: 5px #cdbd97;
-    border-radius: 3px;
+    border: 3px #cdbd97;
+    border-radius: 5px;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
@@ -854,8 +853,8 @@ button, input, optgroup, select, textarea {
     opacity: 75%;
 }
 .div-seminar {
-    border: 5px solid #cdbd97;
-    border-radius: 3px;
+    border: 3px solid #cdbd97;
+    border-radius: 5px;
 }
 
 .div-block-grid-seminar {
@@ -875,6 +874,7 @@ button, input, optgroup, select, textarea {
     border: 0 #000;
     width: 100%;
     margin-bottom: 10px;
+    margin-top: 0px;
     font-size: 20px;
     font-weight: 400;
 }
@@ -903,8 +903,7 @@ button, input, optgroup, select, textarea {
 .list-seminar {
     display: block;
     list-style-type: decimal;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-top: 10px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
@@ -1100,3 +1099,121 @@ button, input, optgroup, select, textarea {
     .scroll-top-btn:hover {
         background-color: #f1f1f1; /* Изменяем цвет при наведении */
     }
+
+
+@media screen and (max-width: 1024px) {
+    main {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .heading-about {
+        margin-top: 10px;
+        margin-bottom: -20px;
+    }
+    .grid-about {
+        margin-top: 20px;
+        flex-flow: column;
+        display: flex;
+    }
+    .container-2 {
+        max-width: 90%;
+    }
+    .image-about {
+        margin-bottom:20px;
+    }
+    .div-double-agency {
+        align-items: center;
+    }
+    .image-agency-2 {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .div-plus {
+        grid-template-columns: 1.5fr 5fr;
+    }
+    .div-one-plus {
+        height: 220px;
+    }
+    .div-image {
+        height:220px;
+    }
+    .bold-text {
+        height: 120px;
+        width: 95%;
+    }
+    .image-arrow {
+        height: 185px;
+        margin-bottom: -61px;
+    }
+    .image-agency-2 {
+        height: 200px;
+        width: 200px;
+    }
+}
+@media screen and (max-width: 478px) {
+    .heading-about, .big-heading {
+        font-size: 28px;
+    }
+    .paragraph-about, .paragraph-seminar, .paragraph-agency, .paragraph-plus, .heading-consult, .bold-text-2 {
+        font-size: 16px;
+    }
+    .heading-consult {
+        line-height: 24px;
+    }
+    .small-heading {
+        font-size: 24px;
+    }
+    .paragraph-plus {
+        font-size: 16px;
+    }
+    .div-image {
+        width: 0;
+        height: 0;
+        border: 0px solid #cdbd97;
+    }
+    .div-plus {
+        display: flex;
+        flex-flow: column;
+        grid-row-gap: 0;
+    }
+    .div-one-plus {
+        margin-bottom: 20px;
+        height: auto;
+    }
+        .div-one-plus._plus1 {
+            margin-bottom: 0px
+        }
+    .bold-text {
+        font-size: 16px;
+    }
+    .div-double-agency {
+        flex-direction: column;
+        align-items: center;
+        grid-row-gap: 0px;
+    }
+    .image-agency-2 {
+        margin-bottom: 0px;
+    }
+    .div-paragraph-agency {
+        margin-bottom: 0px;
+    }
+        .div-paragraph-agency._par1 {
+            margin-bottom: 10px;
+        }
+    .div-block-grid-seminar {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 0;
+    }
+    .paragraph-ways {
+        margin-bottom: 0;
+    }
+    .grid-re {
+        flex-flow: column;
+        display: flex;
+        grid-row-gap: 0;
+    }
+}
