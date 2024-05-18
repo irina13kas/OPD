@@ -8,7 +8,7 @@ header {
     padding: 15px;
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-bottom: 2px solid #fff;
     position: sticky;
@@ -18,16 +18,37 @@ header {
     font-size: 20px;
 }
 
-    header nav a {
-        color: #fff;
-        text-decoration: none;
-        margin-left: 15px;
-        justify-content: center;
+    header nav {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
     }
 
-        header nav a:hover {
-            text-decoration: underline
-        }
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+header nav .menu {
+    display: flex;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    justify-content: center;
+}
+
+    header nav a:hover {
+        text-decoration: underline;
+    }
 
 main {
     width: 80%;
@@ -40,7 +61,7 @@ main {
 .consultation-btn,
 .phone-btn {
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-radius: 5px;
     color: #000000;
 }
@@ -48,7 +69,66 @@ main {
     .consultation-btn:hover,
     .phone-btn:hover {
         background-color: #c3c3c3;
+        text-decoration: none; /* Убираем подчеркивание у ссылок */
     }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+        header nav .consultation-btn,
+        header nav .phone-btn {
+            color: #fff; /* Белый цвет текста на мобильных устройствах */
+        }
+
+        header nav {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    header nav .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+        header nav .menu a {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            background: #233937;
+        }
+
+            header nav .menu a:hover {
+                background: #1a2927;
+            }
+
+    .menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+
+    .left-nav, .right-nav {
+        display: none;
+    }
+
+    .menu .consultation-btn, .menu .phone-btn {
+        display: block;
+    }
+}
+
+
 
 .contacts-text {
     width: 45%;
@@ -90,6 +170,36 @@ a {
 .contacts-heading-text {
     text-align: center;
 
+}
+
+@media only screen and (max-width: 600px) {
+    .contacts-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts-text {
+        width: 90%; /* Увеличиваем ширину текстового контейнера для лучшей читаемости на мобильных */
+        margin: 20px 0;
+    }
+
+    .contacts-iframe {
+        width: 90%; /* Уменьшаем ширину карты для мобильных */
+        height: 50vh; /* Уменьшаем высоту карты для мобильных */
+        margin: 0 auto 20px; /* Центрируем карту */
+    }
+
+    .heading-title {
+        font-size: 30px; /* Уменьшаем размер заголовка для мобильных */
+    }
+
+    .contacts-heading-text {
+        font-size: 16px; /* Уменьшаем размер текста для мобильных */
+    }
+
+    .contacts-text p {
+        font-size: 14px; /* Уменьшаем размер текста для мобильных */
+    }
 }
 
 #showMoreBtn {
@@ -259,6 +369,36 @@ a {
 .feedback-iframe {
     width: 100%;
     height: 225px;
+}
+
+@media only screen and (max-width: 600px) {
+    .feedback-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .feedback-avatar {
+        width: 15%;
+        height: 15%;
+    }
+
+    .feedback-table {
+        width: 100%;
+    }
+
+    .feedback-td {
+        padding: 5%;
+    }
+
+    .feedback-text {
+        text-indent: 0;
+        padding: 0 5%;
+    }
+
+    .feedback-iframe {
+        width: 100%;
+        height: 180px; /* Уменьшим высоту iframe для лучшей адаптации */
+    }
 }
 
 .container-2 {
@@ -1002,7 +1142,7 @@ button, input, optgroup, select, textarea {
         .heading-title-home-container .consl a,
         .heading-title-home-container .numb a {
             display: inline-block; /* Установка элементов в строчно-блочном формате */
-            padding: 10px 20px; /* Поля вокруг текста */
+            padding: 5px 20px; /* Поля вокруг текста */
             background-color: #ffffff; /* Цвет фона */
             color: #000000; /* Цвет текста */
             text-decoration: none; /* Убираем подчеркивание у ссылок */
