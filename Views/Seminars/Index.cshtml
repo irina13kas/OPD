@@ -114,7 +114,7 @@
                         const name = document.getElementById("name");
                         const phone = document.getElementById("Phone");
                         const email = document.getElementById("Email");
-                        const consulation = false;
+                        const consultation = false;
                         const text = "";
                         const response = await fetch('http://89.111.173.104:5000/api/statement', {
                             method: 'POST',
@@ -122,7 +122,7 @@
                                 'Accept': 'application/json',
                                 'Content-Type': 'application/json'
                             },
-                            body: JSON.stringify({ name: name.value, email: email.value, text, phone: phone.value, consulation })
+                            body: JSON.stringify({ name: name.value, email: email.value, text, phone: phone.value, consultation })
                         });
                         const content = await response.json();
 
@@ -146,7 +146,7 @@
                             <input class="text-field-cons w-input" maxlength="256" name="Email" data-name="Email" placeholder="Почта" type="email" id="Email" required />
                         </div>
                     </div>
-                    <input type="button" data-wait="Ожидание" class="submit-button w-button" value="Отправить" onclick="sendConsultationEmail()" />
+                    <input type="button" data-wait="Ожидание" class="submit-button w-button" value="Отправить" onclick="sendSeminarEmail()" />
                 </form>
                 <div class="success-message w-form-done">
                     <div class="text-confirm">Ваша заявка принята!</div>
