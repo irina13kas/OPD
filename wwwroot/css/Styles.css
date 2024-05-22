@@ -73,6 +73,29 @@ header nav a {
     margin-bottom: 10px;
 }
 
+.consultation-btn._menu {
+    display: inline-block;
+    background-color: #1a1b1f;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 5px 5px;
+    color: white;
+    text-align: center;
+    width: 225px;
+    z-index: 50;
+}
+
+.phone-btn._menu {
+    display: flex;
+    background-color: #1a1b1f;
+    border-radius: 5px;
+    border: 3px solid white;
+    padding: 15px 5px;
+    color: white;
+    width: 225px;
+    z-index: 50;
+}
+
 main {
     width: 80%;
     padding: 15px 10%;
@@ -110,6 +133,7 @@ main {
         background-color: #26282d;
         text-decoration: none; /* Убираем подчеркивание у ссылок */
     }
+
 
 .contacts-text {
     width: 45%;
@@ -1196,7 +1220,7 @@ button, input, optgroup, select, textarea {
         background-color: #f1f1f1; /* Изменяем цвет при наведении */
     }
 
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 1366px) {
     .heading-about {
         margin-top: 10px;
         margin-bottom: -20px;
