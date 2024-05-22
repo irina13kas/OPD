@@ -335,7 +335,7 @@
                         const phone = document.getElementById("Phone");
                         const email = document.getElementById("Email");
                         const text = "";
-                        const response = await fetch('http://89.111.173.104:5000/api/statement', {
+                        const response = await fetch('https://ra-agency-server.ru:443/api/statement', {
                             method: 'POST',
                             headers: {
                                 'Accept': 'application/json',
@@ -354,15 +354,15 @@
                         const name = document.getElementById("name");
                         const phone = document.getElementById("Phone");
                         const email = document.getElementById("Email");
-                        const consulation = false;
+                        const consultation = false;
                         const text = "";
-                        const response = await fetch('http://89.111.173.104:5000/api/statement', {
+                        const response = await fetch('https://ra-agency-server.ru:443/api/statement', {
                             method: 'POST',
                             headers: {
                                 'Accept': 'application/json',
                                 'Content-Type': 'application/json'
                             },
-                            body: JSON.stringify({ name: name.value, email: email.value, text, phone: phone.value, consulation })
+                            body: JSON.stringify({ name: name.value, email: email.value, text, phone: phone.value, consultation })
                         });
                         const content = await response.json();
 
